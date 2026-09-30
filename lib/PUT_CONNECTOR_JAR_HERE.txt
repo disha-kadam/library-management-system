@@ -1,0 +1,2 @@
+Put mysql-connector-j-x.x.x.jar in this folder.
+Download: https://dev.mysql.com/downloads/connector/j/  (choose "Platform Independent")
