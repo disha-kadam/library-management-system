@@ -175,14 +175,6 @@ erDiagram
 | JDBC Statement, PreparedStatement, CallableStatement | Reports, Books/Members, Issue tab |
 | SQL injection prevention | every user input goes through `PreparedStatement` |
 
-## Likely viva questions (short answers)
-- **Why a separate `issues` table?** Books and members have a many-to-many relationship. A junction table is the standard way to store it, and it also holds the dates and fine.
-- **Trigger vs stored procedure?** A trigger runs automatically when a table changes (here, when an issue row is inserted or updated). A procedure runs only when called (here, from Java through `CallableStatement`).
-- **Why PreparedStatement?** It sends the query and the values separately, so user input can't change the SQL (prevents SQL injection). It's also precompiled.
-- **Why keep `available_copies` instead of calculating it each time?** It makes the common "is this book available?" check fast. Triggers keep it in sync, and the CHECK constraint guarantees it never goes wrong.
-- **What happens if two librarians issue the last copy at the same time?** The CHECK constraint `available_copies >= 0` rejects the second update, so the database never shows negative copies.
-- **Why hash the password?** If the database leaks, the real passwords aren't exposed.
-- **What is a view?** A saved SELECT query that behaves like a virtual table. `v_current_issues` hides the joins and overdue calculation behind one simple name.
 
 ## Troubleshooting
 | Message | Fix |
