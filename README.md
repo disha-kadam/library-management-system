@@ -6,6 +6,19 @@ A desktop application for running a college library. Librarians sign in, manage 
 
 **Login:** `admin` / `admin123`
 
+## Output Screenshots
+<img width="959" height="536" alt="Image" src="https://github.com/user-attachments/assets/1be7c34b-bbde-4de9-997c-e07ad6a75207" />
+
+<img width="959" height="538" alt="Image" src="https://github.com/user-attachments/assets/e436b7a8-7b61-4a47-ac9d-d2054c867dc0" />
+
+<img width="946" height="535" alt="Image" src="https://github.com/user-attachments/assets/01b6dcdc-f2a2-4425-80de-c1ad6bbc5732" />
+
+<img width="959" height="482" alt="Image" src="https://github.com/user-attachments/assets/c2d22d61-3387-4d2e-8a9b-e885181a16aa" />
+
+<img width="959" height="520" alt="Image" src="https://github.com/user-attachments/assets/e36fb3c3-1980-4c0c-afe7-1189fa00a29b" />
+
+
+
 ## Folder structure
 
 ```
